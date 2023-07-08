@@ -14,7 +14,7 @@ Plots of the training losses and auccracy.
 
 ### Training and Test losses
 
-![Train and Test losses](images/losses.JPG")
+![Train and Test losses](images/losses.JPG)
 
 ### Accuracy
 
