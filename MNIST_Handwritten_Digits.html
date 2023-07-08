@@ -13113,30 +13113,38 @@ div#notebook {
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Defaulting to user installation because normal site-packages is not writeable
-Requirement already satisfied: ipywidgets in /root/.local/lib/python3.7/site-packages (8.0.7)
-Requirement already satisfied: widgetsnbextension~=4.0.7 in /root/.local/lib/python3.7/site-packages (from ipywidgets) (4.0.8)
-Requirement already satisfied: traitlets&gt;=4.3.1 in /opt/conda/lib/python3.7/site-packages (from ipywidgets) (4.3.3)
+Collecting ipywidgets
+  Downloading ipywidgets-8.0.7-py3-none-any.whl (138 kB)
+     |████████████████████████████████| 138 kB 5.8 MB/s eta 0:00:01
+Collecting jupyterlab-widgets~=3.0.7
+  Downloading jupyterlab_widgets-3.0.8-py3-none-any.whl (214 kB)
+     |████████████████████████████████| 214 kB 33.7 MB/s eta 0:00:01
 Requirement already satisfied: ipython&gt;=6.1.0 in /opt/conda/lib/python3.7/site-packages (from ipywidgets) (7.13.0)
-Requirement already satisfied: jupyterlab-widgets~=3.0.7 in /root/.local/lib/python3.7/site-packages (from ipywidgets) (3.0.8)
+Requirement already satisfied: traitlets&gt;=4.3.1 in /opt/conda/lib/python3.7/site-packages (from ipywidgets) (4.3.3)
 Requirement already satisfied: ipykernel&gt;=4.5.1 in /opt/conda/lib/python3.7/site-packages (from ipywidgets) (5.1.4)
-Requirement already satisfied: six in /opt/conda/lib/python3.7/site-packages (from traitlets&gt;=4.3.1-&gt;ipywidgets) (1.16.0)
-Requirement already satisfied: decorator in /opt/conda/lib/python3.7/site-packages (from traitlets&gt;=4.3.1-&gt;ipywidgets) (4.4.2)
-Requirement already satisfied: ipython-genutils in /opt/conda/lib/python3.7/site-packages (from traitlets&gt;=4.3.1-&gt;ipywidgets) (0.2.0)
+Collecting widgetsnbextension~=4.0.7
+  Downloading widgetsnbextension-4.0.8-py3-none-any.whl (2.3 MB)
+     |████████████████████████████████| 2.3 MB 33.8 MB/s eta 0:00:01
+Requirement already satisfied: decorator in /opt/conda/lib/python3.7/site-packages (from ipython&gt;=6.1.0-&gt;ipywidgets) (4.4.2)
 Requirement already satisfied: jedi&gt;=0.10 in /opt/conda/lib/python3.7/site-packages (from ipython&gt;=6.1.0-&gt;ipywidgets) (0.16.0)
+Requirement already satisfied: pickleshare in /opt/conda/lib/python3.7/site-packages (from ipython&gt;=6.1.0-&gt;ipywidgets) (0.7.5)
+Requirement already satisfied: backcall in /opt/conda/lib/python3.7/site-packages (from ipython&gt;=6.1.0-&gt;ipywidgets) (0.1.0)
 Requirement already satisfied: pygments in /opt/conda/lib/python3.7/site-packages (from ipython&gt;=6.1.0-&gt;ipywidgets) (2.5.2)
 Requirement already satisfied: prompt-toolkit!=3.0.0,!=3.0.1,&lt;3.1.0,&gt;=2.0.0 in /opt/conda/lib/python3.7/site-packages (from ipython&gt;=6.1.0-&gt;ipywidgets) (3.0.3)
-Requirement already satisfied: backcall in /opt/conda/lib/python3.7/site-packages (from ipython&gt;=6.1.0-&gt;ipywidgets) (0.1.0)
-Requirement already satisfied: pickleshare in /opt/conda/lib/python3.7/site-packages (from ipython&gt;=6.1.0-&gt;ipywidgets) (0.7.5)
-Requirement already satisfied: setuptools&gt;=18.5 in /opt/conda/lib/python3.7/site-packages (from ipython&gt;=6.1.0-&gt;ipywidgets) (45.2.0.post20200209)
 Requirement already satisfied: pexpect; sys_platform != &#34;win32&#34; in /opt/conda/lib/python3.7/site-packages (from ipython&gt;=6.1.0-&gt;ipywidgets) (4.8.0)
-Requirement already satisfied: jupyter-client in /opt/conda/lib/python3.7/site-packages (from ipykernel&gt;=4.5.1-&gt;ipywidgets) (6.0.0)
+Requirement already satisfied: setuptools&gt;=18.5 in /opt/conda/lib/python3.7/site-packages (from ipython&gt;=6.1.0-&gt;ipywidgets) (45.2.0.post20200209)
+Requirement already satisfied: six in /opt/conda/lib/python3.7/site-packages (from traitlets&gt;=4.3.1-&gt;ipywidgets) (1.16.0)
+Requirement already satisfied: ipython-genutils in /opt/conda/lib/python3.7/site-packages (from traitlets&gt;=4.3.1-&gt;ipywidgets) (0.2.0)
 Requirement already satisfied: tornado&gt;=4.2 in /opt/conda/lib/python3.7/site-packages (from ipykernel&gt;=4.5.1-&gt;ipywidgets) (5.1.1)
+Requirement already satisfied: jupyter-client in /opt/conda/lib/python3.7/site-packages (from ipykernel&gt;=4.5.1-&gt;ipywidgets) (6.0.0)
 Requirement already satisfied: parso&gt;=0.5.2 in /opt/conda/lib/python3.7/site-packages (from jedi&gt;=0.10-&gt;ipython&gt;=6.1.0-&gt;ipywidgets) (0.6.1)
 Requirement already satisfied: wcwidth in /opt/conda/lib/python3.7/site-packages (from prompt-toolkit!=3.0.0,!=3.0.1,&lt;3.1.0,&gt;=2.0.0-&gt;ipython&gt;=6.1.0-&gt;ipywidgets) (0.1.8)
 Requirement already satisfied: ptyprocess&gt;=0.5 in /opt/conda/lib/python3.7/site-packages (from pexpect; sys_platform != &#34;win32&#34;-&gt;ipython&gt;=6.1.0-&gt;ipywidgets) (0.6.0)
-Requirement already satisfied: python-dateutil&gt;=2.1 in /opt/conda/lib/python3.7/site-packages (from jupyter-client-&gt;ipykernel&gt;=4.5.1-&gt;ipywidgets) (2.8.1)
 Requirement already satisfied: pyzmq&gt;=13 in /opt/conda/lib/python3.7/site-packages (from jupyter-client-&gt;ipykernel&gt;=4.5.1-&gt;ipywidgets) (19.0.0)
+Requirement already satisfied: python-dateutil&gt;=2.1 in /opt/conda/lib/python3.7/site-packages (from jupyter-client-&gt;ipykernel&gt;=4.5.1-&gt;ipywidgets) (2.8.1)
 Requirement already satisfied: jupyter-core&gt;=4.6.0 in /opt/conda/lib/python3.7/site-packages (from jupyter-client-&gt;ipykernel&gt;=4.5.1-&gt;ipywidgets) (4.6.3)
+Installing collected packages: jupyterlab-widgets, widgetsnbextension, ipywidgets
+Successfully installed ipywidgets-8.0.7 jupyterlab-widgets-3.0.8 widgetsnbextension-4.0.8
 Enabling notebook extension jupyter-js-widgets/extension...
       - Validating: <span class="ansi-green-fg">OK</span>
 </pre>
@@ -13149,7 +13157,7 @@ Enabling notebook extension jupyter-js-widgets/extension...
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## This cell contains the essential imports you will need – DO NOT CHANGE THE CONTENTS! ##</span>
@@ -13186,7 +13194,7 @@ Make sure to specify <code>download=True</code>!</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Define transforms</span>
@@ -13207,6 +13215,160 @@ Make sure to specify <code>download=True</code>!</p>
 <div class="output_wrapper">
 <div class="output">
 
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Downloading http://yann.lecun.com/exdb/mnist/train-images-idx3-ubyte.gz
+Downloading http://yann.lecun.com/exdb/mnist/train-images-idx3-ubyte.gz to data/MNIST/raw/train-images-idx3-ubyte.gz
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+
+
+ 
+ 
+<div id="06f28d50-10cf-4479-87f1-57936993c562"></div>
+<div class="output_subarea output_widget_view ">
+<script type="text/javascript">
+var element = $('#06f28d50-10cf-4479-87f1-57936993c562');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "1afa518b2ba74ea0ab71bc0d485eb0a9", "version_major": 2, "version_minor": 0}
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Extracting data/MNIST/raw/train-images-idx3-ubyte.gz to data/MNIST/raw
+
+Downloading http://yann.lecun.com/exdb/mnist/train-labels-idx1-ubyte.gz
+Downloading http://yann.lecun.com/exdb/mnist/train-labels-idx1-ubyte.gz to data/MNIST/raw/train-labels-idx1-ubyte.gz
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+
+
+ 
+ 
+<div id="a809a9c4-4263-43c6-8bf2-d64dd64ecb69"></div>
+<div class="output_subarea output_widget_view ">
+<script type="text/javascript">
+var element = $('#a809a9c4-4263-43c6-8bf2-d64dd64ecb69');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "435cf4f0ecec4451b433b2076d3ee103", "version_major": 2, "version_minor": 0}
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Extracting data/MNIST/raw/train-labels-idx1-ubyte.gz to data/MNIST/raw
+
+Downloading http://yann.lecun.com/exdb/mnist/t10k-images-idx3-ubyte.gz
+Downloading http://yann.lecun.com/exdb/mnist/t10k-images-idx3-ubyte.gz to data/MNIST/raw/t10k-images-idx3-ubyte.gz
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+
+
+ 
+ 
+<div id="4037d5ea-6d1e-49d5-9592-987c392d5bb7"></div>
+<div class="output_subarea output_widget_view ">
+<script type="text/javascript">
+var element = $('#4037d5ea-6d1e-49d5-9592-987c392d5bb7');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "b6bd9aea2ae54505be1e1848a51cd3ea", "version_major": 2, "version_minor": 0}
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Extracting data/MNIST/raw/t10k-images-idx3-ubyte.gz to data/MNIST/raw
+
+Downloading http://yann.lecun.com/exdb/mnist/t10k-labels-idx1-ubyte.gz
+Downloading http://yann.lecun.com/exdb/mnist/t10k-labels-idx1-ubyte.gz to data/MNIST/raw/t10k-labels-idx1-ubyte.gz
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+
+
+ 
+ 
+<div id="a402fe81-90e9-4e69-bf68-07f376fb071b"></div>
+<div class="output_subarea output_widget_view ">
+<script type="text/javascript">
+var element = $('#a402fe81-90e9-4e69-bf68-07f376fb071b');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "a21879f7f34c49e581bbccf699594eb0", "version_major": 2, "version_minor": 0}
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Extracting data/MNIST/raw/t10k-labels-idx1-ubyte.gz to data/MNIST/raw
+
+</pre>
+</div>
+</div>
 
 <div class="output_area">
 
@@ -14586,8 +14748,8 @@ Test accuracy: 94.170%
 <div class="highlight"><pre><span></span><span class="n">probs</span><span class="p">,</span> <span class="n">classes</span> <span class="o">=</span> <span class="n">predict</span><span class="p">(</span><span class="n">image_path</span><span class="p">,</span> <span class="n">model</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">probs</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">classes</span><span class="p">)</span>
-<span class="o">&gt;</span> <span class="p">[</span> <span class="mf">0.01558163</span>  <span class="mf">0.01541934</span>  <span class="mf">0.01452626</span>  <span class="mf">0.01443549</span>  <span class="mf">0.01407339</span><span class="p">]</span>
-<span class="o">&gt;</span> <span class="p">[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mf">0.9999293088912964</span><span class="p">,</span> <span class="mf">3.891005690093152e-05</span><span class="p">,</span> <span class="mf">1.8501559679862112e-05</span><span class="p">,</span> <span class="mf">1.2652863915718626e-05</span><span class="p">,</span> <span class="mf">2.6107036887879076e-07</span><span class="p">,</span> <span class="mf">1.4039075324490113e-07</span><span class="p">,</span> <span class="mf">1.1743249217488483e-07</span><span class="p">,</span> <span class="mf">7.484029396209735e-08</span><span class="p">,</span> <span class="mf">2.3713089825072586e-10</span><span class="p">,</span> <span class="mf">6.219477623886638e-12</span><span class="p">]</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">]</span>
 </pre></div>
 
 </div>
@@ -14622,7 +14784,7 @@ Test accuracy: 94.170%
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Sanity-Checking">Sanity Checking<a class="anchor-link" href="#Sanity-Checking">&#182;</a></h2><p>Now that I can use a trained model for predictions, I check to make sure it makes sense. Even if the testing accuracy is high, it's always good to check that there aren't obvious bugs. I used matplotlib to plot the probabilities for the top 5 classes as a bar graph, along with the input image.</p>
+<h2 id="Sanity-Checking">Sanity Checking<a class="anchor-link" href="#Sanity-Checking">&#182;</a></h2><p>Now that I can use a trained model for predictions, I check to make sure it makes sense. Even if the testing accuracy is high, it's always good to check that there aren't obvious bugs. I used matplotlib to plot the probabilities for the top 10 classes as a bar graph, along with the input image.</p>
 
 </div>
 </div>
